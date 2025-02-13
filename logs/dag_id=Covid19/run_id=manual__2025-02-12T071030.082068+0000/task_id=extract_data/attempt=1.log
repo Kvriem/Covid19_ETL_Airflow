@@ -1,0 +1,262 @@
+[2025-02-12T07:11:46.451+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-02-12T07:11:46.502+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Covid19.extract_data manual__2025-02-12T07:10:30.082068+00:00 [queued]>
+[2025-02-12T07:11:46.530+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Covid19.extract_data manual__2025-02-12T07:10:30.082068+00:00 [queued]>
+[2025-02-12T07:11:46.531+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 1
+[2025-02-12T07:11:46.557+0000] {taskinstance.py:2889} INFO - Executing <Task(PythonOperator): extract_data> on 2025-02-12 07:10:30.082068+00:00
+[2025-02-12T07:11:46.572+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=632) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-02-12T07:11:46.579+0000] {standard_task_runner.py:72} INFO - Started process 634 to run task
+[2025-02-12T07:11:46.577+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'Covid19', 'extract_data', 'manual__2025-02-12T07:10:30.082068+00:00', '--job-id', '53', '--raw', '--subdir', 'DAGS_FOLDER/covid_19.py', '--cfg-path', '/tmp/tmpi1qv74yv']
+[2025-02-12T07:11:46.582+0000] {standard_task_runner.py:105} INFO - Job 53: Subtask extract_data
+[2025-02-12T07:11:46.690+0000] {task_command.py:467} INFO - Running <TaskInstance: Covid19.extract_data manual__2025-02-12T07:10:30.082068+00:00 [running]> on host e0d8147cd68a
+[2025-02-12T07:11:47.757+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='Covid19' AIRFLOW_CTX_TASK_ID='extract_data' AIRFLOW_CTX_EXECUTION_DATE='2025-02-12T07:10:30.082068+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-02-12T07:10:30.082068+00:00'
+[2025-02-12T07:11:47.760+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-02-12T07:11:48.933+0000] {covid_19.py:36} ERROR - Failed to fetch data for 2020-01-01 00:00:00: HTTP Error 404: Not Found
+[2025-02-12T07:11:49.651+0000] {covid_19.py:36} ERROR - Failed to fetch data for 2020-01-02 00:00:00: HTTP Error 404: Not Found
+[2025-02-12T07:11:50.588+0000] {covid_19.py:36} ERROR - Failed to fetch data for 2020-01-03 00:00:00: HTTP Error 404: Not Found
+[2025-02-12T07:11:51.286+0000] {covid_19.py:36} ERROR - Failed to fetch data for 2020-01-04 00:00:00: HTTP Error 404: Not Found
+[2025-02-12T07:11:51.899+0000] {covid_19.py:36} ERROR - Failed to fetch data for 2020-01-05 00:00:00: HTTP Error 404: Not Found
+[2025-02-12T07:11:52.616+0000] {covid_19.py:36} ERROR - Failed to fetch data for 2020-01-06 00:00:00: HTTP Error 404: Not Found
+[2025-02-12T07:11:54.161+0000] {covid_19.py:36} ERROR - Failed to fetch data for 2020-01-07 00:00:00: HTTP Error 404: Not Found
+[2025-02-12T07:11:55.278+0000] {covid_19.py:36} ERROR - Failed to fetch data for 2020-01-08 00:00:00: HTTP Error 404: Not Found
+[2025-02-12T07:11:55.844+0000] {covid_19.py:36} ERROR - Failed to fetch data for 2020-01-09 00:00:00: HTTP Error 404: Not Found
+[2025-02-12T07:11:56.408+0000] {covid_19.py:36} ERROR - Failed to fetch data for 2020-01-10 00:00:00: HTTP Error 404: Not Found
+[2025-02-12T07:11:57.328+0000] {covid_19.py:36} ERROR - Failed to fetch data for 2020-01-11 00:00:00: HTTP Error 404: Not Found
+[2025-02-12T07:11:57.838+0000] {covid_19.py:36} ERROR - Failed to fetch data for 2020-01-12 00:00:00: HTTP Error 404: Not Found
+[2025-02-12T07:11:59.273+0000] {covid_19.py:36} ERROR - Failed to fetch data for 2020-01-13 00:00:00: HTTP Error 404: Not Found
+[2025-02-12T07:11:59.889+0000] {covid_19.py:36} ERROR - Failed to fetch data for 2020-01-14 00:00:00: HTTP Error 404: Not Found
+[2025-02-12T07:12:01.217+0000] {covid_19.py:36} ERROR - Failed to fetch data for 2020-01-15 00:00:00: HTTP Error 404: Not Found
+[2025-02-12T07:12:01.832+0000] {covid_19.py:36} ERROR - Failed to fetch data for 2020-01-16 00:00:00: HTTP Error 404: Not Found
+[2025-02-12T07:12:03.427+0000] {covid_19.py:36} ERROR - Failed to fetch data for 2020-01-17 00:00:00: HTTP Error 404: Not Found
+[2025-02-12T07:12:03.996+0000] {covid_19.py:36} ERROR - Failed to fetch data for 2020-01-18 00:00:00: HTTP Error 404: Not Found
+[2025-02-12T07:12:04.606+0000] {covid_19.py:36} ERROR - Failed to fetch data for 2020-01-19 00:00:00: HTTP Error 404: Not Found
+[2025-02-12T07:12:05.725+0000] {covid_19.py:36} ERROR - Failed to fetch data for 2020-01-20 00:00:00: HTTP Error 404: Not Found
+[2025-02-12T07:12:06.262+0000] {covid_19.py:36} ERROR - Failed to fetch data for 2020-01-21 00:00:00: HTTP Error 404: Not Found
+[2025-02-12T07:12:08.505+0000] {covid_19.py:36} ERROR - Failed to fetch data for 2020-01-22 00:00:00: Error tokenizing data. C error: Expected 1 fields in line 42, saw 39
+
+[2025-02-12T07:12:10.443+0000] {covid_19.py:36} ERROR - Failed to fetch data for 2020-01-23 00:00:00: Error tokenizing data. C error: Expected 1 fields in line 42, saw 39
+
+[2025-02-12T07:12:13.303+0000] {covid_19.py:36} ERROR - Failed to fetch data for 2020-01-24 00:00:00: Error tokenizing data. C error: Expected 1 fields in line 42, saw 39
+
+[2025-02-12T07:12:15.557+0000] {covid_19.py:36} ERROR - Failed to fetch data for 2020-01-25 00:00:00: Error tokenizing data. C error: Expected 1 fields in line 42, saw 40
+
+[2025-02-12T07:12:17.588+0000] {covid_19.py:36} ERROR - Failed to fetch data for 2020-01-26 00:00:00: Error tokenizing data. C error: Expected 1 fields in line 42, saw 39
+
+[2025-02-12T07:12:20.146+0000] {covid_19.py:36} ERROR - Failed to fetch data for 2020-01-27 00:00:00: Error tokenizing data. C error: Expected 1 fields in line 42, saw 39
+
+[2025-02-12T07:12:21.992+0000] {covid_19.py:36} ERROR - Failed to fetch data for 2020-01-28 00:00:00: Error tokenizing data. C error: Expected 1 fields in line 42, saw 40
+
+[2025-02-12T07:12:23.834+0000] {covid_19.py:36} ERROR - Failed to fetch data for 2020-01-29 00:00:00: Error tokenizing data. C error: Expected 1 fields in line 42, saw 40
+
+[2025-02-12T07:12:25.683+0000] {covid_19.py:36} ERROR - Failed to fetch data for 2020-01-30 00:00:00: Error tokenizing data. C error: Expected 1 fields in line 42, saw 39
+
+[2025-02-12T07:12:29.372+0000] {covid_19.py:36} ERROR - Failed to fetch data for 2020-01-31 00:00:00: Error tokenizing data. C error: Expected 1 fields in line 42, saw 39
+
+[2025-02-12T07:12:31.102+0000] {covid_19.py:36} ERROR - Failed to fetch data for 2020-02-01 00:00:00: Error tokenizing data. C error: Expected 1 fields in line 42, saw 39
+
+[2025-02-12T07:12:32.844+0000] {covid_19.py:36} ERROR - Failed to fetch data for 2020-02-02 00:00:00: Error tokenizing data. C error: Expected 1 fields in line 42, saw 39
+
+[2025-02-12T07:12:34.588+0000] {covid_19.py:36} ERROR - Failed to fetch data for 2020-02-03 00:00:00: Error tokenizing data. C error: Expected 1 fields in line 42, saw 39
+
+[2025-02-12T07:12:36.225+0000] {covid_19.py:36} ERROR - Failed to fetch data for 2020-02-04 00:00:00: Error tokenizing data. C error: Expected 1 fields in line 42, saw 39
+
+[2025-02-12T07:12:38.175+0000] {covid_19.py:36} ERROR - Failed to fetch data for 2020-02-05 00:00:00: Error tokenizing data. C error: Expected 1 fields in line 42, saw 39
+
+[2025-02-12T07:12:40.115+0000] {covid_19.py:36} ERROR - Failed to fetch data for 2020-02-06 00:00:00: Error tokenizing data. C error: Expected 1 fields in line 42, saw 39
+
+[2025-02-12T07:12:41.958+0000] {covid_19.py:36} ERROR - Failed to fetch data for 2020-02-07 00:00:00: Error tokenizing data. C error: Expected 1 fields in line 42, saw 39
+
+[2025-02-12T07:12:43.802+0000] {covid_19.py:36} ERROR - Failed to fetch data for 2020-02-08 00:00:00: Error tokenizing data. C error: Expected 1 fields in line 42, saw 39
+
+[2025-02-12T07:12:47.903+0000] {covid_19.py:36} ERROR - Failed to fetch data for 2020-02-09 00:00:00: Error tokenizing data. C error: Expected 1 fields in line 42, saw 39
+
+[2025-02-12T07:12:49.751+0000] {covid_19.py:36} ERROR - Failed to fetch data for 2020-02-10 00:00:00: Error tokenizing data. C error: Expected 1 fields in line 42, saw 39
+
+[2025-02-12T07:12:53.631+0000] {covid_19.py:36} ERROR - Failed to fetch data for 2020-02-11 00:00:00: Error tokenizing data. C error: Expected 1 fields in line 42, saw 39
+
+[2025-02-12T07:12:55.376+0000] {covid_19.py:36} ERROR - Failed to fetch data for 2020-02-12 00:00:00: Error tokenizing data. C error: Expected 1 fields in line 42, saw 39
+
+[2025-02-12T07:12:57.216+0000] {covid_19.py:36} ERROR - Failed to fetch data for 2020-02-13 00:00:00: Error tokenizing data. C error: Expected 1 fields in line 42, saw 39
+
+[2025-02-12T07:13:00.086+0000] {covid_19.py:36} ERROR - Failed to fetch data for 2020-02-14 00:00:00: Error tokenizing data. C error: Expected 1 fields in line 42, saw 39
+
+[2025-02-12T07:13:01.928+0000] {covid_19.py:36} ERROR - Failed to fetch data for 2020-02-15 00:00:00: Error tokenizing data. C error: Expected 1 fields in line 42, saw 39
+
+[2025-02-12T07:13:04.180+0000] {covid_19.py:36} ERROR - Failed to fetch data for 2020-02-16 00:00:00: Error tokenizing data. C error: Expected 1 fields in line 42, saw 39
+
+[2025-02-12T07:13:05.925+0000] {covid_19.py:36} ERROR - Failed to fetch data for 2020-02-17 00:00:00: Error tokenizing data. C error: Expected 1 fields in line 42, saw 39
+
+[2025-02-12T07:13:07.763+0000] {covid_19.py:36} ERROR - Failed to fetch data for 2020-02-18 00:00:00: Error tokenizing data. C error: Expected 1 fields in line 42, saw 39
+
+[2025-02-12T07:13:10.836+0000] {covid_19.py:36} ERROR - Failed to fetch data for 2020-02-19 00:00:00: Error tokenizing data. C error: Expected 1 fields in line 42, saw 39
+
+[2025-02-12T07:13:13.395+0000] {covid_19.py:36} ERROR - Failed to fetch data for 2020-02-20 00:00:00: Error tokenizing data. C error: Expected 1 fields in line 42, saw 39
+
+[2025-02-12T07:13:15.957+0000] {covid_19.py:36} ERROR - Failed to fetch data for 2020-02-21 00:00:00: Error tokenizing data. C error: Expected 1 fields in line 42, saw 39
+
+[2025-02-12T07:13:18.723+0000] {covid_19.py:36} ERROR - Failed to fetch data for 2020-02-22 00:00:00: Error tokenizing data. C error: Expected 1 fields in line 42, saw 39
+
+[2025-02-12T07:13:20.564+0000] {covid_19.py:36} ERROR - Failed to fetch data for 2020-02-23 00:00:00: Error tokenizing data. C error: Expected 1 fields in line 42, saw 39
+
+[2025-02-12T07:13:22.408+0000] {covid_19.py:36} ERROR - Failed to fetch data for 2020-02-24 00:00:00: Error tokenizing data. C error: Expected 1 fields in line 42, saw 39
+
+[2025-02-12T07:13:24.154+0000] {covid_19.py:36} ERROR - Failed to fetch data for 2020-02-25 00:00:00: Error tokenizing data. C error: Expected 1 fields in line 42, saw 39
+
+[2025-02-12T07:13:26.006+0000] {covid_19.py:36} ERROR - Failed to fetch data for 2020-02-26 00:00:00: Error tokenizing data. C error: Expected 1 fields in line 42, saw 39
+
+[2025-02-12T07:13:28.965+0000] {covid_19.py:36} ERROR - Failed to fetch data for 2020-02-27 00:00:00: Error tokenizing data. C error: Expected 1 fields in line 42, saw 39
+
+[2025-02-12T07:13:31.215+0000] {covid_19.py:36} ERROR - Failed to fetch data for 2020-02-28 00:00:00: Error tokenizing data. C error: Expected 1 fields in line 42, saw 39
+
+[2025-02-12T07:13:37.769+0000] {covid_19.py:36} ERROR - Failed to fetch data for 2020-02-29 00:00:00: Error tokenizing data. C error: Expected 1 fields in line 42, saw 40
+
+[2025-02-12T07:13:39.509+0000] {covid_19.py:36} ERROR - Failed to fetch data for 2020-03-01 00:00:00: Error tokenizing data. C error: Expected 1 fields in line 42, saw 40
+
+[2025-02-12T07:13:41.356+0000] {covid_19.py:36} ERROR - Failed to fetch data for 2020-03-02 00:00:00: Error tokenizing data. C error: Expected 1 fields in line 42, saw 39
+
+[2025-02-12T07:13:43.298+0000] {covid_19.py:36} ERROR - Failed to fetch data for 2020-03-03 00:00:00: Error tokenizing data. C error: Expected 1 fields in line 42, saw 39
+
+[2025-02-12T07:13:45.250+0000] {covid_19.py:36} ERROR - Failed to fetch data for 2020-03-04 00:00:00: Error tokenizing data. C error: Expected 1 fields in line 42, saw 39
+
+[2025-02-12T07:13:47.290+0000] {covid_19.py:36} ERROR - Failed to fetch data for 2020-03-05 00:00:00: Error tokenizing data. C error: Expected 1 fields in line 42, saw 39
+
+[2025-02-12T07:13:49.644+0000] {covid_19.py:36} ERROR - Failed to fetch data for 2020-03-06 00:00:00: Error tokenizing data. C error: Expected 1 fields in line 42, saw 39
+
+[2025-02-12T07:13:51.591+0000] {covid_19.py:36} ERROR - Failed to fetch data for 2020-03-07 00:00:00: Error tokenizing data. C error: Expected 1 fields in line 42, saw 39
+
+[2025-02-12T07:13:53.542+0000] {covid_19.py:36} ERROR - Failed to fetch data for 2020-03-08 00:00:00: Error tokenizing data. C error: Expected 1 fields in line 42, saw 39
+
+[2025-02-12T07:13:56.507+0000] {covid_19.py:36} ERROR - Failed to fetch data for 2020-03-09 00:00:00: Error tokenizing data. C error: Expected 1 fields in line 42, saw 39
+
+[2025-02-12T07:13:58.452+0000] {covid_19.py:36} ERROR - Failed to fetch data for 2020-03-10 00:00:00: Error tokenizing data. C error: Expected 1 fields in line 42, saw 39
+
+[2025-02-12T07:14:00.202+0000] {covid_19.py:36} ERROR - Failed to fetch data for 2020-03-11 00:00:00: Error tokenizing data. C error: Expected 1 fields in line 42, saw 39
+
+[2025-02-12T07:14:02.039+0000] {covid_19.py:36} ERROR - Failed to fetch data for 2020-03-12 00:00:00: Error tokenizing data. C error: Expected 1 fields in line 42, saw 39
+
+[2025-02-12T07:14:04.595+0000] {covid_19.py:36} ERROR - Failed to fetch data for 2020-03-13 00:00:00: Error tokenizing data. C error: Expected 1 fields in line 42, saw 39
+
+[2025-02-12T07:14:06.541+0000] {covid_19.py:36} ERROR - Failed to fetch data for 2020-03-14 00:00:00: Error tokenizing data. C error: Expected 1 fields in line 42, saw 39
+
+[2025-02-12T07:14:08.293+0000] {covid_19.py:36} ERROR - Failed to fetch data for 2020-03-15 00:00:00: Error tokenizing data. C error: Expected 1 fields in line 42, saw 39
+
+[2025-02-12T07:14:10.125+0000] {covid_19.py:36} ERROR - Failed to fetch data for 2020-03-16 00:00:00: Error tokenizing data. C error: Expected 1 fields in line 42, saw 40
+
+[2025-02-12T07:14:12.085+0000] {covid_19.py:36} ERROR - Failed to fetch data for 2020-03-17 00:00:00: Error tokenizing data. C error: Expected 1 fields in line 42, saw 39
+
+[2025-02-12T07:14:14.120+0000] {covid_19.py:36} ERROR - Failed to fetch data for 2020-03-18 00:00:00: Error tokenizing data. C error: Expected 1 fields in line 42, saw 39
+
+[2025-02-12T07:14:15.876+0000] {covid_19.py:36} ERROR - Failed to fetch data for 2020-03-19 00:00:00: Error tokenizing data. C error: Expected 1 fields in line 42, saw 39
+
+[2025-02-12T07:14:17.994+0000] {covid_19.py:36} ERROR - Failed to fetch data for 2020-03-20 00:00:00: Error tokenizing data. C error: Expected 1 fields in line 42, saw 39
+
+[2025-02-12T07:14:20.043+0000] {covid_19.py:36} ERROR - Failed to fetch data for 2020-03-21 00:00:00: Error tokenizing data. C error: Expected 1 fields in line 42, saw 39
+
+[2025-02-12T07:14:19.882+0000] {local_task_job_runner.py:346} WARNING - State of this instance has been externally set to restarting. Terminating instance.
+[2025-02-12T07:14:20.193+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2025-02-12T07:14:20.248+0000] {process_utils.py:132} INFO - Sending 15 to group 634. PIDs of all processes in the group: [634]
+[2025-02-12T07:14:20.265+0000] {process_utils.py:87} INFO - Sending the signal 15 to group 634
+[2025-02-12T07:14:30.140+0000] {taskinstance.py:3093} ERROR - Received SIGTERM. Terminating subprocesses.
+[2025-02-12T07:14:38.382+0000] {taskinstance.py:3311} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/urllib/request.py", line 1344, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+  File "/usr/local/lib/python3.12/http/client.py", line 1336, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "/usr/local/lib/python3.12/http/client.py", line 1382, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.12/http/client.py", line 1331, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "/usr/local/lib/python3.12/http/client.py", line 1091, in _send_output
+    self.send(msg)
+  File "/usr/local/lib/python3.12/http/client.py", line 1035, in send
+    self.connect()
+  File "/usr/local/lib/python3.12/http/client.py", line 1470, in connect
+    super().connect()
+  File "/usr/local/lib/python3.12/http/client.py", line 1001, in connect
+    self.sock = self._create_connection(
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/socket.py", line 841, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/socket.py", line 976, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 422, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/covid_19.py", line 31, in extract_data_from_github
+    df = pd.read_csv(path)
+         ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 948, in read_csv
+    return _read(filepath_or_buffer, kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 611, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1448, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/io/parsers/readers.py", line 1705, in _make_engine
+    self.handles = get_handle(
+                   ^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/io/common.py", line 718, in get_handle
+    ioargs = _get_filepath_or_buffer(
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/io/common.py", line 372, in _get_filepath_or_buffer
+    with urlopen(req_info) as req:
+         ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/pandas/io/common.py", line 274, in urlopen
+    return urllib.request.urlopen(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/urllib/request.py", line 215, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/urllib/request.py", line 515, in open
+    response = self._open(req, data)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/urllib/request.py", line 532, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/urllib/request.py", line 492, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/urllib/request.py", line 1392, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/urllib/request.py", line 1347, in do_open
+    raise URLError(err)
+          ^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/urllib/error.py", line 25, in __init__
+    def __init__(self, reason, filename=None):
+    
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3095, in signal_handler
+    raise AirflowTaskTerminated("Task received SIGTERM signal")
+airflow.exceptions.AirflowTaskTerminated: Task received SIGTERM signal
+[2025-02-12T07:14:38.842+0000] {taskinstance.py:1225} INFO - Marking task as UP_FOR_RETRY. dag_id=Covid19, task_id=extract_data, run_id=manual__2025-02-12T07:10:30.082068+00:00, execution_date=20250212T071030, start_date=20250212T071146, end_date=20250212T071438
+[2025-02-12T07:14:48.214+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-02-12T07:14:48.330+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=634, status='terminated', exitcode=2, started='07:11:46') (634) terminated with exit code 2

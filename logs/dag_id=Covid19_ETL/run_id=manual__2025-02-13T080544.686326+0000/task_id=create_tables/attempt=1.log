@@ -1,0 +1,89 @@
+[2025-02-13T08:06:01.293+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-02-13T08:06:01.339+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Covid19_ETL.create_tables manual__2025-02-13T08:05:44.686326+00:00 [queued]>
+[2025-02-13T08:06:01.357+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Covid19_ETL.create_tables manual__2025-02-13T08:05:44.686326+00:00 [queued]>
+[2025-02-13T08:06:01.358+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 1
+[2025-02-13T08:06:01.389+0000] {taskinstance.py:2889} INFO - Executing <Task(PostgresOperator): create_tables> on 2025-02-13 08:05:44.686326+00:00
+[2025-02-13T08:06:01.432+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=584) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-02-13T08:06:01.447+0000] {standard_task_runner.py:72} INFO - Started process 586 to run task
+[2025-02-13T08:06:01.452+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'Covid19_ETL', 'create_tables', 'manual__2025-02-13T08:05:44.686326+00:00', '--job-id', '17', '--raw', '--subdir', 'DAGS_FOLDER/covid_19.py', '--cfg-path', '/tmp/tmp6ey04zk2']
+[2025-02-13T08:06:01.458+0000] {standard_task_runner.py:105} INFO - Job 17: Subtask create_tables
+[2025-02-13T08:06:01.580+0000] {task_command.py:467} INFO - Running <TaskInstance: Covid19_ETL.create_tables manual__2025-02-13T08:05:44.686326+00:00 [running]> on host 3b43358e3e84
+[2025-02-13T08:06:05.119+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='Covid19_ETL' AIRFLOW_CTX_TASK_ID='create_tables' AIRFLOW_CTX_EXECUTION_DATE='2025-02-13T08:05:44.686326+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-02-13T08:05:44.686326+00:00'
+[2025-02-13T08:06:05.123+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-02-13T08:06:05.169+0000] {sql.py:278} INFO - Executing: 
+        CREATE TABLE IF NOT EXISTS dim_date_details (
+            date_id SERIAL PRIMARY KEY,
+            date DATE UNIQUE NOT NULL,
+            year INTEGER,
+            month INTEGER,
+            day INTEGER,
+            weekday VARCHAR(9),
+            is_weekend BOOLEAN
+        );
+
+        CREATE TABLE IF NOT EXISTS dim_location_details (
+            location_id SERIAL PRIMARY KEY,
+            fips VARCHAR(10),
+            admin2 VARCHAR(255),
+            province_state VARCHAR(255),
+            country_region VARCHAR(255),
+            lat FLOAT,
+            long_ FLOAT,
+            combined_key VARCHAR(500) UNIQUE
+        );
+
+        CREATE TABLE IF NOT EXISTS fact_cases (
+            case_id SERIAL PRIMARY KEY,
+            date_id INTEGER REFERENCES dim_date_details(date_id),
+            location_id INTEGER REFERENCES dim_location_details(location_id),
+            confirmed INTEGER,
+            deaths INTEGER,
+            recovered INTEGER,
+            active INTEGER,
+            incident_rate FLOAT,
+            case_fatality_ratio FLOAT
+        );
+        
+[2025-02-13T08:06:05.192+0000] {base.py:84} INFO - Retrieving connection 'postgres_conn'
+[2025-02-13T08:06:05.217+0000] {base.py:84} INFO - Retrieving connection 'postgres_conn'
+[2025-02-13T08:06:05.227+0000] {sql.py:553} INFO - Running statement: 
+        CREATE TABLE IF NOT EXISTS dim_date_details (
+            date_id SERIAL PRIMARY KEY,
+            date DATE UNIQUE NOT NULL,
+            year INTEGER,
+            month INTEGER,
+            day INTEGER,
+            weekday VARCHAR(9),
+            is_weekend BOOLEAN
+        );
+
+        CREATE TABLE IF NOT EXISTS dim_location_details (
+            location_id SERIAL PRIMARY KEY,
+            fips VARCHAR(10),
+            admin2 VARCHAR(255),
+            province_state VARCHAR(255),
+            country_region VARCHAR(255),
+            lat FLOAT,
+            long_ FLOAT,
+            combined_key VARCHAR(500) UNIQUE
+        );
+
+        CREATE TABLE IF NOT EXISTS fact_cases (
+            case_id SERIAL PRIMARY KEY,
+            date_id INTEGER REFERENCES dim_date_details(date_id),
+            location_id INTEGER REFERENCES dim_location_details(location_id),
+            confirmed INTEGER,
+            deaths INTEGER,
+            recovered INTEGER,
+            active INTEGER,
+            incident_rate FLOAT,
+            case_fatality_ratio FLOAT
+        );
+        , parameters: None
+[2025-02-13T08:06:05.254+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-02-13T08:06:05.256+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=Covid19_ETL, task_id=create_tables, run_id=manual__2025-02-13T08:05:44.686326+00:00, execution_date=20250213T080544, start_date=20250213T080601, end_date=20250213T080605
+[2025-02-13T08:06:05.389+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-02-13T08:06:05.865+0000] {taskinstance.py:3895} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-02-13T08:06:05.873+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

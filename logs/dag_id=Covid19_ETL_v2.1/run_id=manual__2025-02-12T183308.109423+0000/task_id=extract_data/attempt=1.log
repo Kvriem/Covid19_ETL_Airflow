@@ -1,0 +1,23 @@
+[2025-02-12T18:33:21.376+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-02-12T18:33:21.404+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Covid19_ETL_v2.1.extract_data manual__2025-02-12T18:33:08.109423+00:00 [queued]>
+[2025-02-12T18:33:21.420+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Covid19_ETL_v2.1.extract_data manual__2025-02-12T18:33:08.109423+00:00 [queued]>
+[2025-02-12T18:33:21.423+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 1
+[2025-02-12T18:33:21.445+0000] {taskinstance.py:2889} INFO - Executing <Task(PythonOperator): extract_data> on 2025-02-12 18:33:08.109423+00:00
+[2025-02-12T18:33:21.454+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=2023) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-02-12T18:33:21.457+0000] {standard_task_runner.py:72} INFO - Started process 2025 to run task
+[2025-02-12T18:33:21.457+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'Covid19_ETL_v2.1', 'extract_data', 'manual__2025-02-12T18:33:08.109423+00:00', '--job-id', '170', '--raw', '--subdir', 'DAGS_FOLDER/covid_test.py', '--cfg-path', '/tmp/tmpxvl9iga6']
+[2025-02-12T18:33:21.461+0000] {standard_task_runner.py:105} INFO - Job 170: Subtask extract_data
+[2025-02-12T18:33:21.514+0000] {task_command.py:467} INFO - Running <TaskInstance: Covid19_ETL_v2.1.extract_data manual__2025-02-12T18:33:08.109423+00:00 [running]> on host f99369d27a52
+[2025-02-12T18:33:21.807+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='Covid19_ETL_v2.1' AIRFLOW_CTX_TASK_ID='extract_data' AIRFLOW_CTX_EXECUTION_DATE='2025-02-12T18:33:08.109423+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-02-12T18:33:08.109423+00:00'
+[2025-02-12T18:33:21.809+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-02-12T18:33:21.835+0000] {base.py:84} INFO - Retrieving connection 'postgres_conn'
+[2025-02-12T18:33:21.845+0000] {covid_test.py:32} INFO - Trying https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_daily_reports/01-30-2020.csv
+[2025-02-12T18:33:22.346+0000] {covid_test.py:54} INFO - Successfully fetched data for 2020-01-30
+[2025-02-12T18:33:22.349+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-02-12T18:33:22.365+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-02-12T18:33:22.367+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=Covid19_ETL_v2.1, task_id=extract_data, run_id=manual__2025-02-12T18:33:08.109423+00:00, execution_date=20250212T183308, start_date=20250212T183321, end_date=20250212T183322
+[2025-02-12T18:33:22.440+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-02-12T18:33:22.477+0000] {taskinstance.py:3895} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-02-12T18:33:22.482+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

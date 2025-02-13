@@ -1,0 +1,23 @@
+[2025-02-12T18:09:22.504+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-02-12T18:09:22.526+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Covid19_ETL_v2.1.transform_data manual__2025-02-12T18:09:00.614842+00:00 [queued]>
+[2025-02-12T18:09:22.542+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Covid19_ETL_v2.1.transform_data manual__2025-02-12T18:09:00.614842+00:00 [queued]>
+[2025-02-12T18:09:22.543+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 1
+[2025-02-12T18:09:22.563+0000] {taskinstance.py:2889} INFO - Executing <Task(PythonOperator): transform_data> on 2025-02-12 18:09:00.614842+00:00
+[2025-02-12T18:09:22.584+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=1686) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-02-12T18:09:22.586+0000] {standard_task_runner.py:72} INFO - Started process 1688 to run task
+[2025-02-12T18:09:22.587+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'Covid19_ETL_v2.1', 'transform_data', 'manual__2025-02-12T18:09:00.614842+00:00', '--job-id', '159', '--raw', '--subdir', 'DAGS_FOLDER/covid_test.py', '--cfg-path', '/tmp/tmpswuvsp85']
+[2025-02-12T18:09:22.589+0000] {standard_task_runner.py:105} INFO - Job 159: Subtask transform_data
+[2025-02-12T18:09:22.653+0000] {task_command.py:467} INFO - Running <TaskInstance: Covid19_ETL_v2.1.transform_data manual__2025-02-12T18:09:00.614842+00:00 [running]> on host f99369d27a52
+[2025-02-12T18:09:24.634+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='Covid19_ETL_v2.1' AIRFLOW_CTX_TASK_ID='transform_data' AIRFLOW_CTX_EXECUTION_DATE='2025-02-12T18:09:00.614842+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-02-12T18:09:00.614842+00:00'
+[2025-02-12T18:09:24.643+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-02-12T18:09:24.812+0000] {warnings.py:112} WARNING - /opt/***/dags/covid_test.py:126: FutureWarning: Passing literal json to 'read_json' is deprecated and will be removed in a future version. To read from a literal string, wrap it in a 'StringIO' object.
+  df = pd.read_json(raw_data)
+
+[2025-02-12T18:09:25.013+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-02-12T18:09:25.041+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-02-12T18:09:25.042+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=Covid19_ETL_v2.1, task_id=transform_data, run_id=manual__2025-02-12T18:09:00.614842+00:00, execution_date=20250212T180900, start_date=20250212T180922, end_date=20250212T180925
+[2025-02-12T18:09:25.113+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-02-12T18:09:25.244+0000] {taskinstance.py:3895} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-02-12T18:09:25.263+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

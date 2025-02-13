@@ -1,0 +1,43 @@
+[2025-02-12T06:52:27.927+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-02-12T06:52:27.970+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Covid19.create_dim_date scheduled__2025-02-12T06:45:00+00:00 [queued]>
+[2025-02-12T06:52:28.008+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Covid19.create_dim_date scheduled__2025-02-12T06:45:00+00:00 [queued]>
+[2025-02-12T06:52:28.011+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 1
+[2025-02-12T06:52:28.056+0000] {taskinstance.py:2889} INFO - Executing <Task(PostgresOperator): create_dim_date> on 2025-02-12 06:45:00+00:00
+[2025-02-12T06:52:28.088+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=309) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-02-12T06:52:28.122+0000] {standard_task_runner.py:72} INFO - Started process 320 to run task
+[2025-02-12T06:52:28.122+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'Covid19', 'create_dim_date', 'scheduled__2025-02-12T06:45:00+00:00', '--job-id', '29', '--raw', '--subdir', 'DAGS_FOLDER/covid_19.py', '--cfg-path', '/tmp/tmph3feoo2r']
+[2025-02-12T06:52:28.161+0000] {standard_task_runner.py:105} INFO - Job 29: Subtask create_dim_date
+[2025-02-12T06:52:28.571+0000] {task_command.py:467} INFO - Running <TaskInstance: Covid19.create_dim_date scheduled__2025-02-12T06:45:00+00:00 [running]> on host e0d8147cd68a
+[2025-02-12T06:52:41.913+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='Covid19' AIRFLOW_CTX_TASK_ID='create_dim_date' AIRFLOW_CTX_EXECUTION_DATE='2025-02-12T06:45:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-02-12T06:45:00+00:00'
+[2025-02-12T06:52:41.922+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-02-12T06:52:42.214+0000] {sql.py:278} INFO - Executing: 
+        CREATE TABLE IF NOT EXISTS dim_date (
+        date_id SERIAL PRIMARY KEY,
+        date DATE NOT NULL,
+        year INTEGER,
+        month INTEGER,
+        day INTEGER,
+        weekday VARCHAR(10),
+        is_weekend BOOLEAN
+        );
+        
+[2025-02-12T06:52:42.296+0000] {base.py:84} INFO - Retrieving connection 'postgres_conn'
+[2025-02-12T06:52:42.343+0000] {base.py:84} INFO - Retrieving connection 'postgres_conn'
+[2025-02-12T06:52:42.442+0000] {sql.py:553} INFO - Running statement: 
+        CREATE TABLE IF NOT EXISTS dim_date (
+        date_id SERIAL PRIMARY KEY,
+        date DATE NOT NULL,
+        year INTEGER,
+        month INTEGER,
+        day INTEGER,
+        weekday VARCHAR(10),
+        is_weekend BOOLEAN
+        );
+        , parameters: None
+[2025-02-12T06:52:44.508+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-02-12T06:52:44.510+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=Covid19, task_id=create_dim_date, run_id=scheduled__2025-02-12T06:45:00+00:00, execution_date=20250212T064500, start_date=20250212T065227, end_date=20250212T065244
+[2025-02-12T06:52:44.624+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-02-12T06:52:45.484+0000] {taskinstance.py:3895} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-02-12T06:52:45.490+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

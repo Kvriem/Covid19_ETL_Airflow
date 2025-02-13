@@ -1,0 +1,45 @@
+[2025-02-12T07:11:42.046+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-02-12T07:11:42.111+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: Covid19.create_fact_table manual__2025-02-12T07:10:30.082068+00:00 [queued]>
+[2025-02-12T07:11:42.146+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: Covid19.create_fact_table manual__2025-02-12T07:10:30.082068+00:00 [queued]>
+[2025-02-12T07:11:42.148+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 1
+[2025-02-12T07:11:42.210+0000] {taskinstance.py:2889} INFO - Executing <Task(PostgresOperator): create_fact_table> on 2025-02-12 07:10:30.082068+00:00
+[2025-02-12T07:11:42.239+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=620) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-02-12T07:11:42.251+0000] {standard_task_runner.py:72} INFO - Started process 622 to run task
+[2025-02-12T07:11:42.250+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'Covid19', 'create_fact_table', 'manual__2025-02-12T07:10:30.082068+00:00', '--job-id', '52', '--raw', '--subdir', 'DAGS_FOLDER/covid_19.py', '--cfg-path', '/tmp/tmpnso7qe4j']
+[2025-02-12T07:11:42.258+0000] {standard_task_runner.py:105} INFO - Job 52: Subtask create_fact_table
+[2025-02-12T07:11:42.414+0000] {task_command.py:467} INFO - Running <TaskInstance: Covid19.create_fact_table manual__2025-02-12T07:10:30.082068+00:00 [running]> on host e0d8147cd68a
+[2025-02-12T07:11:43.703+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='Covid19' AIRFLOW_CTX_TASK_ID='create_fact_table' AIRFLOW_CTX_EXECUTION_DATE='2025-02-12T07:10:30.082068+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-02-12T07:10:30.082068+00:00'
+[2025-02-12T07:11:43.705+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2025-02-12T07:11:43.736+0000] {sql.py:278} INFO - Executing: 
+        CREATE TABLE IF NOT EXISTS fact_covid_cases (
+        case_id SERIAL PRIMARY KEY,
+        date_id INTEGER REFERENCES dim_date(date_id),
+        location_id INTEGER REFERENCES dim_location(location_id),
+        confirmed INTEGER,
+        deaths INTEGER,
+        recovered INTEGER,
+        active INTEGER,
+        incident_rate FLOAT,
+        case_fatality_ratio FLOAT
+        );
+[2025-02-12T07:11:43.756+0000] {base.py:84} INFO - Retrieving connection 'postgres_conn'
+[2025-02-12T07:11:43.777+0000] {base.py:84} INFO - Retrieving connection 'postgres_conn'
+[2025-02-12T07:11:43.784+0000] {sql.py:553} INFO - Running statement: 
+        CREATE TABLE IF NOT EXISTS fact_covid_cases (
+        case_id SERIAL PRIMARY KEY,
+        date_id INTEGER REFERENCES dim_date(date_id),
+        location_id INTEGER REFERENCES dim_location(location_id),
+        confirmed INTEGER,
+        deaths INTEGER,
+        recovered INTEGER,
+        active INTEGER,
+        incident_rate FLOAT,
+        case_fatality_ratio FLOAT
+        );, parameters: None
+[2025-02-12T07:11:43.808+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2025-02-12T07:11:43.810+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=Covid19, task_id=create_fact_table, run_id=manual__2025-02-12T07:10:30.082068+00:00, execution_date=20250212T071030, start_date=20250212T071142, end_date=20250212T071143
+[2025-02-12T07:11:43.900+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-02-12T07:11:43.958+0000] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-02-12T07:11:43.968+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

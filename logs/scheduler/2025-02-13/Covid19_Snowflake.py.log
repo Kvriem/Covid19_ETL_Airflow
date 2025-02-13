@@ -1,0 +1,296 @@
+[2025-02-13T08:27:41.930+0000] {processor.py:186} INFO - Started process (PID=1197) to work on /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:27:41.943+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Covid19_Snowflake.py for tasks to queue
+[2025-02-13T08:27:42.167+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:27:42.135+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:27:45.331+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:27:45.318+0000] {dagbag.py:387} ERROR - Failed to import: /opt/airflow/dags/Covid19_Snowflake.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 383, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/Covid19_Snowflake.py", line 172, in <module>
+    create_tables =SnowflakeOperator(
+                   ^^^^^^^^^^^^^^^^^
+NameError: name 'SnowflakeOperator' is not defined
+[2025-02-13T08:27:45.339+0000] {processor.py:927} WARNING - No viable dags retrieved from /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:27:45.366+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Covid19_Snowflake.py took 3.792 seconds
+[2025-02-13T08:28:26.894+0000] {processor.py:186} INFO - Started process (PID=1207) to work on /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:28:26.912+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Covid19_Snowflake.py for tasks to queue
+[2025-02-13T08:28:26.970+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:28:26.961+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:28:28.413+0000] {processor.py:925} INFO - DAG(s) 'Covid19_ETL' retrieved from /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:28:35.139+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:28:35.137+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-13T08:28:35.269+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:28:35.269+0000] {dag.py:4180} INFO - Setting next_dagrun for Covid19_ETL to 2025-02-13 00:00:00+00:00, run_after=2025-02-14 00:00:00+00:00
+[2025-02-13T08:28:35.593+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Covid19_Snowflake.py took 9.252 seconds
+[2025-02-13T08:29:08.350+0000] {processor.py:186} INFO - Started process (PID=1218) to work on /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:29:08.363+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Covid19_Snowflake.py for tasks to queue
+[2025-02-13T08:29:08.373+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:29:08.372+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:29:08.574+0000] {processor.py:925} INFO - DAG(s) 'Covid19_ETL' retrieved from /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:29:08.712+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:29:08.709+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-13T08:29:08.820+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:29:08.820+0000] {dag.py:4180} INFO - Setting next_dagrun for Covid19_ETL to 2025-02-13 00:00:00+00:00, run_after=2025-02-14 00:00:00+00:00
+[2025-02-13T08:29:08.939+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Covid19_Snowflake.py took 0.614 seconds
+[2025-02-13T08:29:39.069+0000] {processor.py:186} INFO - Started process (PID=1226) to work on /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:29:39.073+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Covid19_Snowflake.py for tasks to queue
+[2025-02-13T08:29:39.076+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:29:39.075+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:29:39.123+0000] {processor.py:925} INFO - DAG(s) 'Covid19_ETL' retrieved from /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:29:39.482+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:29:39.481+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-13T08:29:39.542+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:29:39.541+0000] {dag.py:4180} INFO - Setting next_dagrun for Covid19_ETL to 2025-02-13 00:00:00+00:00, run_after=2025-02-14 00:00:00+00:00
+[2025-02-13T08:29:39.613+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Covid19_Snowflake.py took 0.555 seconds
+[2025-02-13T08:30:10.495+0000] {processor.py:186} INFO - Started process (PID=1235) to work on /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:30:10.497+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Covid19_Snowflake.py for tasks to queue
+[2025-02-13T08:30:10.505+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:30:10.505+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:30:10.581+0000] {processor.py:925} INFO - DAG(s) 'Covid19_ETL' retrieved from /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:30:10.761+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:30:10.760+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-13T08:30:10.826+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:30:10.825+0000] {dag.py:4180} INFO - Setting next_dagrun for Covid19_ETL to 2025-02-13 00:00:00+00:00, run_after=2025-02-14 00:00:00+00:00
+[2025-02-13T08:30:10.879+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Covid19_Snowflake.py took 0.398 seconds
+[2025-02-13T08:30:42.190+0000] {processor.py:186} INFO - Started process (PID=1244) to work on /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:30:42.197+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Covid19_Snowflake.py for tasks to queue
+[2025-02-13T08:30:42.209+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:30:42.208+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:30:42.465+0000] {processor.py:925} INFO - DAG(s) 'Covid19_ETL' retrieved from /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:30:43.004+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:30:43.002+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-13T08:30:43.276+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:30:43.275+0000] {dag.py:4180} INFO - Setting next_dagrun for Covid19_ETL to 2025-02-13 00:00:00+00:00, run_after=2025-02-14 00:00:00+00:00
+[2025-02-13T08:30:43.671+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Covid19_Snowflake.py took 1.542 seconds
+[2025-02-13T08:30:47.769+0000] {processor.py:186} INFO - Started process (PID=1246) to work on /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:30:47.771+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Covid19_Snowflake.py for tasks to queue
+[2025-02-13T08:30:47.779+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:30:47.778+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:30:47.984+0000] {processor.py:925} INFO - DAG(s) 'Covid19_ETL_Snowflake' retrieved from /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:30:49.062+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:30:49.061+0000] {override.py:1911} INFO - Created Permission View: can delete on DAG:Covid19_ETL_Snowflake
+[2025-02-13T08:30:49.160+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:30:49.148+0000] {override.py:1911} INFO - Created Permission View: can read on DAG:Covid19_ETL_Snowflake
+[2025-02-13T08:30:49.238+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:30:49.237+0000] {override.py:1911} INFO - Created Permission View: can edit on DAG:Covid19_ETL_Snowflake
+[2025-02-13T08:30:49.370+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:30:49.369+0000] {override.py:1911} INFO - Created Permission View: can create on DAG Run:Covid19_ETL_Snowflake
+[2025-02-13T08:30:49.422+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:30:49.419+0000] {override.py:1911} INFO - Created Permission View: can read on DAG Run:Covid19_ETL_Snowflake
+[2025-02-13T08:30:49.468+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:30:49.468+0000] {override.py:1911} INFO - Created Permission View: menu access on DAG Run:Covid19_ETL_Snowflake
+[2025-02-13T08:30:49.523+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:30:49.522+0000] {override.py:1911} INFO - Created Permission View: can delete on DAG Run:Covid19_ETL_Snowflake
+[2025-02-13T08:30:49.525+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:30:49.524+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-13T08:30:49.593+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:30:49.592+0000] {dag.py:3262} INFO - Creating ORM DAG for Covid19_ETL_Snowflake
+[2025-02-13T08:30:49.659+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:30:49.658+0000] {dag.py:4180} INFO - Setting next_dagrun for Covid19_ETL_Snowflake to 2025-02-12 00:00:00+00:00, run_after=2025-02-13 00:00:00+00:00
+[2025-02-13T08:30:49.732+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Covid19_Snowflake.py took 1.980 seconds
+[2025-02-13T08:30:52.055+0000] {processor.py:186} INFO - Started process (PID=1253) to work on /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:30:52.062+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Covid19_Snowflake.py for tasks to queue
+[2025-02-13T08:30:52.069+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:30:52.068+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:30:52.377+0000] {processor.py:925} INFO - DAG(s) 'Covid19_ETL_Snowflake' retrieved from /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:30:52.528+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:30:52.527+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-13T08:30:52.754+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:30:52.754+0000] {dag.py:4180} INFO - Setting next_dagrun for Covid19_ETL_Snowflake to 2025-02-12 00:00:00+00:00, run_after=2025-02-13 00:00:00+00:00
+[2025-02-13T08:30:53.413+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Covid19_Snowflake.py took 1.380 seconds
+[2025-02-13T08:31:25.588+0000] {processor.py:186} INFO - Started process (PID=1261) to work on /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:31:25.598+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Covid19_Snowflake.py for tasks to queue
+[2025-02-13T08:31:25.647+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:31:25.640+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:31:26.174+0000] {processor.py:925} INFO - DAG(s) 'Covid19_ETL_Snowflake' retrieved from /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:31:26.413+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:31:26.403+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-13T08:31:26.701+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:31:26.700+0000] {dag.py:4180} INFO - Setting next_dagrun for Covid19_ETL_Snowflake to 2025-02-12 00:00:00+00:00, run_after=2025-02-13 00:00:00+00:00
+[2025-02-13T08:31:26.827+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Covid19_Snowflake.py took 1.355 seconds
+[2025-02-13T08:32:02.996+0000] {processor.py:186} INFO - Started process (PID=1269) to work on /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:32:03.166+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Covid19_Snowflake.py for tasks to queue
+[2025-02-13T08:32:03.885+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:32:03.813+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:32:05.695+0000] {processor.py:925} INFO - DAG(s) 'Covid19_ETL_Snowflake' retrieved from /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:32:06.443+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:32:06.435+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-13T08:32:07.343+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Covid19_Snowflake.py took 5.340 seconds
+[2025-02-13T08:32:38.521+0000] {processor.py:186} INFO - Started process (PID=1277) to work on /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:32:38.531+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Covid19_Snowflake.py for tasks to queue
+[2025-02-13T08:32:38.649+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:32:38.641+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:32:38.988+0000] {processor.py:925} INFO - DAG(s) 'Covid19_ETL_Snowflake' retrieved from /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:32:39.263+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:32:39.260+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-13T08:32:40.013+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Covid19_Snowflake.py took 1.606 seconds
+[2025-02-13T08:33:13.616+0000] {processor.py:186} INFO - Started process (PID=1287) to work on /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:33:13.674+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Covid19_Snowflake.py for tasks to queue
+[2025-02-13T08:33:13.974+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:33:13.935+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:33:16.501+0000] {processor.py:925} INFO - DAG(s) 'Covid19_ETL_Snowflake' retrieved from /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:33:17.549+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:33:17.543+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-13T08:33:20.335+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Covid19_Snowflake.py took 7.062 seconds
+[2025-02-13T08:33:53.696+0000] {processor.py:186} INFO - Started process (PID=1296) to work on /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:33:53.739+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Covid19_Snowflake.py for tasks to queue
+[2025-02-13T08:33:54.019+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:33:54.000+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:33:55.266+0000] {processor.py:925} INFO - DAG(s) 'Covid19_ETL_Snowflake' retrieved from /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:33:57.948+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:33:57.925+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-13T08:34:00.677+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Covid19_Snowflake.py took 8.592 seconds
+[2025-02-13T08:34:32.417+0000] {processor.py:186} INFO - Started process (PID=1305) to work on /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:34:32.426+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Covid19_Snowflake.py for tasks to queue
+[2025-02-13T08:34:32.461+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:34:32.457+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:34:32.623+0000] {processor.py:925} INFO - DAG(s) 'Covid19_ETL_Snowflake' retrieved from /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:34:32.780+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:34:32.779+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-13T08:34:32.964+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Covid19_Snowflake.py took 0.689 seconds
+[2025-02-13T08:35:04.102+0000] {processor.py:186} INFO - Started process (PID=1314) to work on /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:35:04.106+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Covid19_Snowflake.py for tasks to queue
+[2025-02-13T08:35:04.133+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:35:04.129+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:35:04.286+0000] {processor.py:925} INFO - DAG(s) 'Covid19_ETL_Snowflake' retrieved from /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:35:04.419+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:35:04.417+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-13T08:35:04.551+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:35:04.545+0000] {dag.py:4180} INFO - Setting next_dagrun for Covid19_ETL_Snowflake to 2025-02-13 00:00:00+00:00, run_after=2025-02-14 00:00:00+00:00
+[2025-02-13T08:35:04.645+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Covid19_Snowflake.py took 0.604 seconds
+[2025-02-13T08:35:35.948+0000] {processor.py:186} INFO - Started process (PID=1323) to work on /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:35:35.958+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Covid19_Snowflake.py for tasks to queue
+[2025-02-13T08:35:36.008+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:35:36.005+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:35:36.257+0000] {processor.py:925} INFO - DAG(s) 'Covid19_ETL_Snowflake' retrieved from /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:35:36.505+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:35:36.501+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-13T08:35:36.717+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:35:36.717+0000] {dag.py:4180} INFO - Setting next_dagrun for Covid19_ETL_Snowflake to 2025-02-13 00:00:00+00:00, run_after=2025-02-14 00:00:00+00:00
+[2025-02-13T08:35:37.155+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Covid19_Snowflake.py took 1.337 seconds
+[2025-02-13T08:36:08.006+0000] {processor.py:186} INFO - Started process (PID=1333) to work on /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:36:08.014+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Covid19_Snowflake.py for tasks to queue
+[2025-02-13T08:36:08.071+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:36:08.066+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:36:08.469+0000] {processor.py:925} INFO - DAG(s) 'Covid19_ETL_Snowflake' retrieved from /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:36:08.719+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:36:08.715+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-13T08:36:08.829+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:36:08.828+0000] {dag.py:4180} INFO - Setting next_dagrun for Covid19_ETL_Snowflake to 2025-02-13 00:00:00+00:00, run_after=2025-02-14 00:00:00+00:00
+[2025-02-13T08:36:08.896+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Covid19_Snowflake.py took 0.949 seconds
+[2025-02-13T08:36:41.815+0000] {processor.py:186} INFO - Started process (PID=1342) to work on /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:36:41.837+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Covid19_Snowflake.py for tasks to queue
+[2025-02-13T08:36:41.993+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:36:41.985+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:36:42.179+0000] {processor.py:925} INFO - DAG(s) 'Covid19_ETL_Snowflake' retrieved from /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:36:42.318+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:36:42.317+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-13T08:36:42.408+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:36:42.407+0000] {dag.py:4180} INFO - Setting next_dagrun for Covid19_ETL_Snowflake to 2025-02-13 00:00:00+00:00, run_after=2025-02-14 00:00:00+00:00
+[2025-02-13T08:36:42.468+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Covid19_Snowflake.py took 0.819 seconds
+[2025-02-13T08:37:17.980+0000] {processor.py:186} INFO - Started process (PID=1351) to work on /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:37:18.003+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Covid19_Snowflake.py for tasks to queue
+[2025-02-13T08:37:18.231+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:37:18.224+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:37:20.308+0000] {processor.py:925} INFO - DAG(s) 'Covid19_ETL_Snowflake' retrieved from /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:37:21.305+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:37:21.298+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-13T08:37:21.873+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:37:21.866+0000] {dag.py:4180} INFO - Setting next_dagrun for Covid19_ETL_Snowflake to 2025-02-13 00:00:00+00:00, run_after=2025-02-14 00:00:00+00:00
+[2025-02-13T08:37:22.065+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Covid19_Snowflake.py took 4.394 seconds
+[2025-02-13T08:37:52.374+0000] {processor.py:186} INFO - Started process (PID=1367) to work on /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:37:52.377+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Covid19_Snowflake.py for tasks to queue
+[2025-02-13T08:37:52.419+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:37:52.414+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:37:52.561+0000] {processor.py:925} INFO - DAG(s) 'Covid19_ETL_Snowflake' retrieved from /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:37:52.637+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:37:52.635+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-13T08:37:52.687+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:37:52.686+0000] {dag.py:4180} INFO - Setting next_dagrun for Covid19_ETL_Snowflake to 2025-02-13 00:00:00+00:00, run_after=2025-02-14 00:00:00+00:00
+[2025-02-13T08:37:52.728+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Covid19_Snowflake.py took 0.400 seconds
+[2025-02-13T08:37:54.137+0000] {processor.py:186} INFO - Started process (PID=1370) to work on /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:37:54.139+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Covid19_Snowflake.py for tasks to queue
+[2025-02-13T08:37:54.142+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:37:54.142+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:37:54.210+0000] {processor.py:925} INFO - DAG(s) 'Covid19_ETL_Snowflake' retrieved from /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:37:54.262+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:37:54.256+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-13T08:37:54.323+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:37:54.322+0000] {dag.py:4180} INFO - Setting next_dagrun for Covid19_ETL_Snowflake to 2025-02-13 00:00:00+00:00, run_after=2025-02-14 00:00:00+00:00
+[2025-02-13T08:37:54.417+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Covid19_Snowflake.py took 0.287 seconds
+[2025-02-13T08:38:25.014+0000] {processor.py:186} INFO - Started process (PID=1379) to work on /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:38:25.016+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Covid19_Snowflake.py for tasks to queue
+[2025-02-13T08:38:25.020+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:38:25.019+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:38:25.058+0000] {processor.py:925} INFO - DAG(s) 'Covid19_ETL_Snowflake' retrieved from /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:38:25.096+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:38:25.095+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-13T08:38:25.124+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:38:25.124+0000] {dag.py:4180} INFO - Setting next_dagrun for Covid19_ETL_Snowflake to 2025-02-13 00:00:00+00:00, run_after=2025-02-14 00:00:00+00:00
+[2025-02-13T08:38:25.153+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Covid19_Snowflake.py took 0.146 seconds
+[2025-02-13T08:38:58.999+0000] {processor.py:186} INFO - Started process (PID=1389) to work on /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:38:59.015+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Covid19_Snowflake.py for tasks to queue
+[2025-02-13T08:38:59.025+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:38:59.024+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:38:59.121+0000] {processor.py:925} INFO - DAG(s) 'Covid19_ETL_Snowflake' retrieved from /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:38:59.792+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:38:59.791+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-13T08:38:59.864+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:38:59.859+0000] {dag.py:4180} INFO - Setting next_dagrun for Covid19_ETL_Snowflake to 2025-02-13 00:00:00+00:00, run_after=2025-02-14 00:00:00+00:00
+[2025-02-13T08:39:00.052+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Covid19_Snowflake.py took 1.103 seconds
+[2025-02-13T08:39:37.129+0000] {processor.py:186} INFO - Started process (PID=1398) to work on /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:39:37.156+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Covid19_Snowflake.py for tasks to queue
+[2025-02-13T08:39:37.237+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:39:37.233+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:39:37.529+0000] {processor.py:925} INFO - DAG(s) 'Covid19_ETL_Snowflake' retrieved from /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:39:37.589+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:39:37.588+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-13T08:39:37.708+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Covid19_Snowflake.py took 0.687 seconds
+[2025-02-13T08:40:16.348+0000] {processor.py:186} INFO - Started process (PID=1408) to work on /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:40:16.352+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Covid19_Snowflake.py for tasks to queue
+[2025-02-13T08:40:16.359+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:40:16.358+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:40:16.425+0000] {processor.py:925} INFO - DAG(s) 'Covid19_ETL_Snowflake' retrieved from /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:40:16.494+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:40:16.490+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-13T08:40:16.548+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:40:16.547+0000] {dag.py:4180} INFO - Setting next_dagrun for Covid19_ETL_Snowflake to 2025-02-13 00:00:00+00:00, run_after=2025-02-14 00:00:00+00:00
+[2025-02-13T08:40:16.594+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Covid19_Snowflake.py took 0.260 seconds
+[2025-02-13T08:40:47.039+0000] {processor.py:186} INFO - Started process (PID=1415) to work on /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:40:47.047+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Covid19_Snowflake.py for tasks to queue
+[2025-02-13T08:40:47.080+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:40:47.078+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:40:47.229+0000] {processor.py:925} INFO - DAG(s) 'Covid19_ETL_Snowflake' retrieved from /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:40:47.362+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:40:47.360+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-13T08:40:47.443+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:40:47.443+0000] {dag.py:4180} INFO - Setting next_dagrun for Covid19_ETL_Snowflake to 2025-02-13 00:00:00+00:00, run_after=2025-02-14 00:00:00+00:00
+[2025-02-13T08:40:47.489+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Covid19_Snowflake.py took 0.519 seconds
+[2025-02-13T08:41:18.279+0000] {processor.py:186} INFO - Started process (PID=1424) to work on /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:41:18.282+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Covid19_Snowflake.py for tasks to queue
+[2025-02-13T08:41:18.302+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:41:18.300+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:41:18.431+0000] {processor.py:925} INFO - DAG(s) 'Covid19_ETL_Snowflake' retrieved from /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:41:18.532+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:41:18.530+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-13T08:41:18.622+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:41:18.621+0000] {dag.py:4180} INFO - Setting next_dagrun for Covid19_ETL_Snowflake to 2025-02-13 00:00:00+00:00, run_after=2025-02-14 00:00:00+00:00
+[2025-02-13T08:41:18.681+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Covid19_Snowflake.py took 0.450 seconds
+[2025-02-13T08:41:50.679+0000] {processor.py:186} INFO - Started process (PID=1433) to work on /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:41:50.685+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Covid19_Snowflake.py for tasks to queue
+[2025-02-13T08:41:50.713+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:41:50.710+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:41:50.873+0000] {processor.py:925} INFO - DAG(s) 'Covid19_ETL_Snowflake' retrieved from /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:41:51.037+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:41:51.033+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-13T08:41:51.122+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:41:51.122+0000] {dag.py:4180} INFO - Setting next_dagrun for Covid19_ETL_Snowflake to 2025-02-13 00:00:00+00:00, run_after=2025-02-14 00:00:00+00:00
+[2025-02-13T08:41:51.189+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Covid19_Snowflake.py took 0.557 seconds
+[2025-02-13T08:42:22.894+0000] {processor.py:186} INFO - Started process (PID=1442) to work on /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:42:22.910+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Covid19_Snowflake.py for tasks to queue
+[2025-02-13T08:42:22.936+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:42:22.933+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:42:23.157+0000] {processor.py:925} INFO - DAG(s) 'Covid19_ETL_Snowflake' retrieved from /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:42:23.346+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:42:23.345+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-13T08:42:23.450+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:42:23.449+0000] {dag.py:4180} INFO - Setting next_dagrun for Covid19_ETL_Snowflake to 2025-02-13 00:00:00+00:00, run_after=2025-02-14 00:00:00+00:00
+[2025-02-13T08:42:23.503+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Covid19_Snowflake.py took 0.867 seconds
+[2025-02-13T08:42:53.736+0000] {processor.py:186} INFO - Started process (PID=1451) to work on /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:42:53.741+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Covid19_Snowflake.py for tasks to queue
+[2025-02-13T08:42:53.756+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:42:53.754+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:42:53.833+0000] {processor.py:925} INFO - DAG(s) 'Covid19_ETL_Snowflake' retrieved from /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:42:53.903+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:42:53.902+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-13T08:42:53.963+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:42:53.963+0000] {dag.py:4180} INFO - Setting next_dagrun for Covid19_ETL_Snowflake to 2025-02-13 00:00:00+00:00, run_after=2025-02-14 00:00:00+00:00
+[2025-02-13T08:42:54.014+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Covid19_Snowflake.py took 0.321 seconds
+[2025-02-13T08:43:24.511+0000] {processor.py:186} INFO - Started process (PID=1460) to work on /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:43:24.513+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Covid19_Snowflake.py for tasks to queue
+[2025-02-13T08:43:24.516+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:43:24.516+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:43:24.570+0000] {processor.py:925} INFO - DAG(s) 'Covid19_ETL_Snowflake' retrieved from /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:43:24.628+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:43:24.628+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-13T08:43:24.654+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:43:24.654+0000] {dag.py:4180} INFO - Setting next_dagrun for Covid19_ETL_Snowflake to 2025-02-13 00:00:00+00:00, run_after=2025-02-14 00:00:00+00:00
+[2025-02-13T08:43:24.677+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Covid19_Snowflake.py took 0.176 seconds
+[2025-02-13T08:43:55.046+0000] {processor.py:186} INFO - Started process (PID=1469) to work on /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:43:55.055+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Covid19_Snowflake.py for tasks to queue
+[2025-02-13T08:43:55.086+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:43:55.083+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:43:55.231+0000] {processor.py:925} INFO - DAG(s) 'Covid19_ETL_Snowflake' retrieved from /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:43:55.364+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:43:55.363+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-13T08:43:55.440+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:43:55.440+0000] {dag.py:4180} INFO - Setting next_dagrun for Covid19_ETL_Snowflake to 2025-02-13 00:00:00+00:00, run_after=2025-02-14 00:00:00+00:00
+[2025-02-13T08:43:55.519+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Covid19_Snowflake.py took 0.540 seconds
+[2025-02-13T08:44:27.251+0000] {processor.py:186} INFO - Started process (PID=1478) to work on /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:44:27.286+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Covid19_Snowflake.py for tasks to queue
+[2025-02-13T08:44:27.473+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:44:27.468+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:44:27.796+0000] {processor.py:925} INFO - DAG(s) 'Covid19_ETL_Snowflake' retrieved from /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:44:27.983+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:44:27.981+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-13T08:44:28.077+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:44:28.077+0000] {dag.py:4180} INFO - Setting next_dagrun for Covid19_ETL_Snowflake to 2025-02-13 00:00:00+00:00, run_after=2025-02-14 00:00:00+00:00
+[2025-02-13T08:44:28.847+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Covid19_Snowflake.py took 1.723 seconds
+[2025-02-13T08:44:59.091+0000] {processor.py:186} INFO - Started process (PID=1487) to work on /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:44:59.095+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Covid19_Snowflake.py for tasks to queue
+[2025-02-13T08:44:59.109+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:44:59.108+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:44:59.179+0000] {processor.py:925} INFO - DAG(s) 'Covid19_ETL_Snowflake' retrieved from /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:44:59.254+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:44:59.253+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-13T08:44:59.302+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:44:59.302+0000] {dag.py:4180} INFO - Setting next_dagrun for Covid19_ETL_Snowflake to 2025-02-13 00:00:00+00:00, run_after=2025-02-14 00:00:00+00:00
+[2025-02-13T08:44:59.336+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Covid19_Snowflake.py took 0.273 seconds
+[2025-02-13T08:45:30.011+0000] {processor.py:186} INFO - Started process (PID=1497) to work on /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:45:30.014+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Covid19_Snowflake.py for tasks to queue
+[2025-02-13T08:45:30.028+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:45:30.027+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:45:30.098+0000] {processor.py:925} INFO - DAG(s) 'Covid19_ETL_Snowflake' retrieved from /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:45:30.175+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:45:30.174+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-13T08:45:30.240+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:45:30.240+0000] {dag.py:4180} INFO - Setting next_dagrun for Covid19_ETL_Snowflake to 2025-02-13 00:00:00+00:00, run_after=2025-02-14 00:00:00+00:00
+[2025-02-13T08:45:30.294+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Covid19_Snowflake.py took 0.310 seconds
+[2025-02-13T08:46:00.456+0000] {processor.py:186} INFO - Started process (PID=1506) to work on /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:46:00.458+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Covid19_Snowflake.py for tasks to queue
+[2025-02-13T08:46:00.463+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:46:00.463+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:46:00.513+0000] {processor.py:925} INFO - DAG(s) 'Covid19_ETL_Snowflake' retrieved from /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:46:00.549+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:46:00.548+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-13T08:46:00.575+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:46:00.575+0000] {dag.py:4180} INFO - Setting next_dagrun for Covid19_ETL_Snowflake to 2025-02-13 00:00:00+00:00, run_after=2025-02-14 00:00:00+00:00
+[2025-02-13T08:46:00.598+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Covid19_Snowflake.py took 0.158 seconds
+[2025-02-13T08:46:30.794+0000] {processor.py:186} INFO - Started process (PID=1515) to work on /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:46:30.798+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Covid19_Snowflake.py for tasks to queue
+[2025-02-13T08:46:30.807+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:46:30.807+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:46:30.867+0000] {processor.py:925} INFO - DAG(s) 'Covid19_ETL_Snowflake' retrieved from /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:46:30.920+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:46:30.920+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-13T08:46:30.959+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:46:30.959+0000] {dag.py:4180} INFO - Setting next_dagrun for Covid19_ETL_Snowflake to 2025-02-13 00:00:00+00:00, run_after=2025-02-14 00:00:00+00:00
+[2025-02-13T08:46:30.996+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Covid19_Snowflake.py took 0.224 seconds
+[2025-02-13T08:47:01.369+0000] {processor.py:186} INFO - Started process (PID=1524) to work on /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:47:01.376+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Covid19_Snowflake.py for tasks to queue
+[2025-02-13T08:47:01.399+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:47:01.396+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:47:02.047+0000] {processor.py:925} INFO - DAG(s) 'Covid19_ETL_Snowflake' retrieved from /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:47:02.738+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:47:02.731+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-13T08:47:03.604+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Covid19_Snowflake.py took 2.272 seconds
+[2025-02-13T08:47:33.790+0000] {processor.py:186} INFO - Started process (PID=1533) to work on /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:47:33.792+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Covid19_Snowflake.py for tasks to queue
+[2025-02-13T08:47:33.796+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:47:33.796+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:47:33.832+0000] {processor.py:925} INFO - DAG(s) 'Covid19_ETL_Snowflake' retrieved from /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:47:33.950+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:47:33.950+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-13T08:47:33.977+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:47:33.976+0000] {dag.py:4180} INFO - Setting next_dagrun for Covid19_ETL_Snowflake to 2025-02-13 00:00:00+00:00, run_after=2025-02-14 00:00:00+00:00
+[2025-02-13T08:47:34.010+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Covid19_Snowflake.py took 0.232 seconds
+[2025-02-13T08:48:04.535+0000] {processor.py:186} INFO - Started process (PID=1542) to work on /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:48:04.537+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Covid19_Snowflake.py for tasks to queue
+[2025-02-13T08:48:04.546+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:48:04.545+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:48:04.596+0000] {processor.py:925} INFO - DAG(s) 'Covid19_ETL_Snowflake' retrieved from /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:48:04.648+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:48:04.647+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-13T08:48:04.697+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:48:04.697+0000] {dag.py:4180} INFO - Setting next_dagrun for Covid19_ETL_Snowflake to 2025-02-13 00:00:00+00:00, run_after=2025-02-14 00:00:00+00:00
+[2025-02-13T08:48:04.738+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Covid19_Snowflake.py took 0.221 seconds
+[2025-02-13T08:48:35.576+0000] {processor.py:186} INFO - Started process (PID=1551) to work on /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:48:35.662+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/Covid19_Snowflake.py for tasks to queue
+[2025-02-13T08:48:35.677+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:48:35.675+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:48:36.131+0000] {processor.py:925} INFO - DAG(s) 'Covid19_ETL_Snowflake' retrieved from /opt/airflow/dags/Covid19_Snowflake.py
+[2025-02-13T08:48:36.359+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:48:36.357+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-02-13T08:48:36.592+0000] {logging_mixin.py:190} INFO - [2025-02-13T08:48:36.592+0000] {dag.py:4180} INFO - Setting next_dagrun for Covid19_ETL_Snowflake to 2025-02-13 00:00:00+00:00, run_after=2025-02-14 00:00:00+00:00
+[2025-02-13T08:48:36.774+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/Covid19_Snowflake.py took 1.240 seconds
